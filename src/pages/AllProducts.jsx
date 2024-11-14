@@ -1,5 +1,5 @@
 import React from "react";
-import Banner2 from "../assets/banner2.jpg";
+import Banner2 from "../assets/Banner2.jpg";
 import ProductGrid from "../components/ProductGrid";
 
 const AllProducts = () => {
