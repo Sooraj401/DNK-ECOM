@@ -23,21 +23,21 @@ const CategoryCard = () => {
         <div className="bg-black/40 text-white p-5 w-full">
           <h2 className="text-xl font-bold mb-2">20% Off On Tank Tops</h2>
           <p className="text-sm mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac dictum.</p>
-          <button className="bg-white text-black font-semibold px-4 py-2">SHOP NOW</button>
+          <button className="bg-white text-black font-semibold px-4 py-2 hover:bg-black hover:text-white">SHOP NOW</button>
         </div>
       </div>
     <div data-aos="zoom-in" data-aos-delay="150" className="relative bg-cover bg-center h-[500px] flex items-end p-6" style={{ backgroundImage: `url(${card2})` }}>
         <div className="bg-black/40 text-white p-5 w-full">
           <h2 className="text-xl font-bold mb-2">Latest Eyewear for you</h2>
           <p className="text-sm mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac dictum.</p>
-          <button className="bg-white text-black font-semibold px-4 py-2">SHOP NOW</button>
+          <button className="bg-white text-black font-semibold px-4 py-2 hover:bg-black hover:text-white">SHOP NOW</button>
         </div>
       </div>
     <div data-aos="zoom-in" data-aos-delay="200" className="relative bg-cover bg-center h-[500px] flex items-end p-6" style={{ backgroundImage: `url(${card3})` }}>
         <div className="bg-black/40 text-white p-5 w-full">
           <h2 className="text-xl font-bold mb-2">Trending Stylish Shoes</h2>
           <p className="text-sm mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac dictum.</p>
-          <button className="bg-white text-black font-semibold px-4 py-2">SHOP NOW</button>
+          <button className="bg-white text-black font-semibold px-4 py-2 hover:bg-black hover:text-white">SHOP NOW</button>
         </div>
       </div>
     </div>

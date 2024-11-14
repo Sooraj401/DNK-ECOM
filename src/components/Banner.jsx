@@ -21,8 +21,7 @@ const Banner = () => {
         style={{ backgroundImage: `url(${banner})` }}
       >
         <h1
-          data-aos="zoom-in"
-          data-aos-delay="50"
+          data-aos="zoom-in" data-aos-delay="50"
           className="text-headingColor text-3xl sm:text-4xl md:text-5xl lg:text-[80px] font-bold leading-[1.2] sm:leading-[1.3] lg:leading-[80px] tracking-wide"
         >
           Raining Offers For <br /> Hot Summer!

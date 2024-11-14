@@ -7,9 +7,13 @@ import { FaBars, FaTimes } from "react-icons/fa";
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
+  const handleMenuClick = () => {
+    setMenuOpen(false);
+  };
+
   return (
     <nav className='w-full bg-white/20 backdrop-blur-md flex justify-between items-center lg:px-16 px-6 py-3 fixed z-10'>
-      <Link className='text-4xl lg:text-5xl font-bold text-headingColor font-brandFont' to={'/'}>DNK</Link>
+      <Link className='text-4xl lg:text-5xl font-bold text-headingColor font-brandFont' to={'/'} onClick={handleMenuClick}>DNK</Link>
       
       <div className="lg:hidden text-headingColor text-2xl cursor-pointer" onClick={() => setMenuOpen(!menuOpen)}>
         {menuOpen ? <FaTimes /> : <FaBars />}
@@ -22,10 +26,10 @@ const Navbar = () => {
         bg-white lg:bg-transparent transition duration-300 
         lg:space-y-0 space-y-4 lg:px-0 px-6 py-6 lg:py-0 shadow-lg lg:shadow-none`}
       >
-        <Link className='text-sm font-bold cursor-pointer text-headingColor px-4 py-2 rounded-lg hover:bg-headingColor hover:text-white uppercase' to={"/products"}>everything</Link>
-        <Link className='text-sm font-bold cursor-pointer text-headingColor px-4 py-2 rounded-lg hover:bg-headingColor hover:text-white uppercase' to={"/products"}>women</Link>
-        <Link className='text-sm font-bold cursor-pointer text-headingColor px-4 py-2 rounded-lg hover:bg-headingColor hover:text-white uppercase' to={"/products"}>men</Link>
-        <Link className='text-sm font-bold cursor-pointer text-headingColor px-4 py-2 rounded-lg hover:bg-headingColor hover:text-white uppercase' to={"/products"}>accessories</Link>
+        <Link className='text-sm font-bold cursor-pointer text-headingColor px-4 py-2 rounded-lg hover:bg-headingColor hover:text-white uppercase' to={"/products"} onClick={handleMenuClick}>everything</Link>
+        <Link className='text-sm font-bold cursor-pointer text-headingColor px-4 py-2 rounded-lg hover:bg-headingColor hover:text-white uppercase' to={"/products"} onClick={handleMenuClick}>women</Link>
+        <Link className='text-sm font-bold cursor-pointer text-headingColor px-4 py-2 rounded-lg hover:bg-headingColor hover:text-white uppercase' to={"/products"} onClick={handleMenuClick}>men</Link>
+        <Link className='text-sm font-bold cursor-pointer text-headingColor px-4 py-2 rounded-lg hover:bg-headingColor hover:text-white uppercase' to={"/products"} onClick={handleMenuClick}>accessories</Link>
       </ul>
 
       <div 
@@ -34,8 +38,8 @@ const Navbar = () => {
         absolute lg:static top-[180px] left-0 w-full lg:w-auto 
         bg-white lg:bg-transparent px-6 lg:px-0 py-4 lg:py-0 shadow-lg lg:shadow-none`}
       >
-        <Link className='text-sm font-bold cursor-pointer text-headingColor px-4 py-2 rounded-lg hover:bg-headingColor hover:text-white uppercase' to={'/about'}>about</Link>
-        <Link className='text-sm font-bold cursor-pointer text-headingColor px-4 py-2 rounded-lg hover:bg-headingColor hover:text-white uppercase' to={'/contact'}>contact us</Link>
+        <Link className='text-sm font-bold cursor-pointer text-headingColor px-4 py-2 rounded-lg hover:bg-headingColor hover:text-white uppercase' to={'/about'} onClick={handleMenuClick}>about</Link>
+        <Link className='text-sm font-bold cursor-pointer text-headingColor px-4 py-2 rounded-lg hover:bg-headingColor hover:text-white uppercase' to={'/contact'} onClick={handleMenuClick}>contact us</Link>
         
         <div className='flex items-center justify-center space-x-4'>
           <h1 className='text-md font-bold cursor-pointer text-headingColor px-4 py-2'>₹0.00</h1>
@@ -47,7 +51,7 @@ const Navbar = () => {
         </div>
       </div>
     </nav>
-  )
+  );
 }
 
 export default Navbar;

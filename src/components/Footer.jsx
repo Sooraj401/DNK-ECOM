@@ -51,7 +51,7 @@ const Footer = () => {
             placeholder='example@gmail.com'
             className='w-full max-w-xs px-3 py-2 border-2 rounded-lg focus:outline-none'
           />
-          <button className='bg-headingColor text-white px-4 py-2 rounded-lg mt-2'>SUBSCRIBE</button>
+          <button className='bg-headingColor text-white px-4 py-2 rounded-lg mt-2 hover:bg-black hover:text-white'>SUBSCRIBE</button>
         </div>
       </div>
 
